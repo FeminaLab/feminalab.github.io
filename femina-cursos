@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FeminaLab - Info</title>
+  <!-- Fuentes personalizadas -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(145deg, #ffe4ec, #fff5f9);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .info {
+      max-width: 850px;
+      background-color: white;
+      border-radius: 25px;
+      box-shadow: 0 0 25px rgba(255, 153, 204, 0.3);
+      padding: 40px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      color: #d63384;
+      font-size: 42px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+
+    h3 {
+      font-weight: 600;
+      font-size: 20px;
+      color: #b03060;
+      margin-top: 30px;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .links {
+      margin-top: 30px;
+    }
+
+    .dropdown {
+      margin-bottom: 20px;
+    }
+
+    .dropdown button {
+      background-color: #f8d7e8;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      font-weight: bold;
+      color: #b03060;
+    }
+
+    .dropdown button:hover {
+      background-color: #f3c0dc;
+      color: white;
+      transform: scale(1.02);
+    }
+
+    .dropdown-content {
+      display: none;
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: #d63384;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="info" id="info-v2">
+    <h2>¡Bienvenida a FeminaLab! 💖</h2>
+    <p><strong>Pago quincenal:</strong> 1,000 pesos colombianos. Accede a todos los cursos y recursos.</p>
+    <p><strong>¿Cómo ganar dinero?</strong> Puedes vender los PDFs a tu propio precio y emprender tu camino. ¡Aprovecha esta oportunidad!</p>
+    <p><strong>Recursos disponibles:</strong> Explora los recursos y cursos para comenzar tu emprendimiento.</p>
+
+    <p><strong>Pago en otros países (equivalente a 1,000 COP):</strong></p>
+    <ul>
+      <li><strong>Argentina:</strong> 310 ARS</li>
+      <li><strong>México:</strong> 180 MXN</li>
+      <li><strong>Chile:</strong> 1,300 CLP</li>
+      <li><strong>Perú:</strong> 240 PEN</li>
+      <li><strong>Ecuador:</strong> 0.24 USD</li>
+      <li><strong>Brasil:</strong> 4.00 BRL</li>
+      <li><strong>Uruguay:</strong> 440 UYU</li>
+      <li><strong>Paraguay:</strong> 173 PYG</li>
+      <li><strong>Venezuela:</strong> 370 VES</li>
+      <li><strong>Bolivia:</strong> 20 BOB</li>
+      <li><strong>Honduras:</strong> 40 HNL</li>
+      <li><strong>El Salvador:</strong> 0.23 USD</li>
+      <li><strong>Nicaragua:</strong> 80 NIO</li>
+      <li><strong>Costa Rica:</strong> 3,900 CRC</li>
+    </ul>
+
+    <div class="links">
+      <h3>Recursos y Kits:</h3>
+
+      <div class="dropdown">
+        <button>Kit de Impresión Escolar</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Kit de Impresión Escolar</a><br>
+          <a href="#">PDF: Material Escolar Básico</a><br>
+          <a href="#">PDF: Etiquetas Escolares</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Kit para Maestros y Maestras</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Planificación Educativa</a><br>
+          <a href="#">PDF: Agendas para Profesores</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Cuadernos de Actividades de Navidad</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Actividades de Navidad</a><br>
+          <a href="#">PDF: Manualidades Navideñas</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Medicinas y Papelería en Casa</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Guía de Medicinas Básicas</a><br>
+          <a href="#">PDF: Papelería Básica para Casa</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Emprendimiento y Actividades Educativas</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Guía para Emprendedores</a><br>
+          <a href="#">PDF: Actividades Educativas para Niños</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Cursos Ofimáticos</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Introducción a la Ofimática</a><br>
+          <a href="#">PDF: Ofimática Avanzada</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Archivo de Atismos</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Guía para Archivos Atismos</a><br>
+          <a href="#">PDF: Ejercicios de Atismos</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Stickers Creativos para Emprendedores</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Cómo Crear Stickers</a><br>
+          <a href="#">PDF: Kit de Stickers Creativos</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Manualidades para Crear en Casa</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Manualidades Fáciles</a><br>
+          <a href="#">PDF: Manualidades Avanzadas</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Creadores de Material Educativo</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Crear Cuadernos</a><br>
+          <a href="#">PDF: Material Educativo Avanzado</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Cursos de Idiomas Gratuitos</button>
+        <div class="dropdown-content">
+          <a href="#">PDF: Cursos de Inglés</a><br>
+          <a href="#">PDF: Cursos de Francés</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>Girls' Company</button>
+        <div class="dropdown-content">
+          <a href="https://www.tiktok.com/@girlscompany" target="_blank">TikTok: Girls' Company</a><br>
+          <a href="#">Información sobre Girls' Company</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button>💬 Grupo de WhatsApp</button>
+        <div class="dropdown-content">
+          <a href="https://wa.me/1234567890" target="_blank">Únete al Grupo de WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
