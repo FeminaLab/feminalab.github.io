@@ -137,20 +137,23 @@
 </head>
 <body>
   <div class="login-container" id="login-container">
-    <h2>Bienvenida a FeminaLab</h2>
-    <p>Por favor, inicia sesión para continuar</p>
-    <form id="login-form">
-      <input type="text" id="username" placeholder="Nombre de usuario" required />
-      <input type="password" id="password" placeholder="Contraseña" required />
-      <button type="submit">Iniciar sesión</button>
-      <p id="error">Usuario o contraseña incorrectos</p>
-    </form>
-    <div id="welcome-message">¡Hola hermosa, bienvenida a FeminaLab! 💖</div>
+  <div class="logo-circle">
+    <img src="ruta-de-tu-logo.png" alt="Logo FeminaLab" />
   </div>
+  <h2>Bienvenida a FeminaLab</h2>
+  <p>Por favor, inicia sesión para continuar</p>
+  <form id="login-form">
+    <input type="text" id="username" placeholder="Nombre de usuario" required />
+    <input type="password" id="password" placeholder="Contraseña" required />
+    <button type="submit">Iniciar sesión</button>
+    <p id="error">Usuario o contraseña incorrectos</p>
+  </form>
+  <div id="welcome-message">¡Hola hermosa, bienvenida a FeminaLab! 💖</div>
+</div>
 
-  <div id="iframe-container">
-    <iframe src="https://thedomighit.github.io/" id="iframe"></iframe>
-  </div>
+<div id="iframe-container">
+  <iframe src="https://thedomighit.github.io/" id="iframe"></iframe>
+</div>
 
   <script>
     const users = {
