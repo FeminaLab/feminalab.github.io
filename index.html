@@ -173,33 +173,35 @@
 <div id="iframe-container">
   <iframe src="https://thedomighit.github.io/" id="iframe"></iframe>
 </div>
-  <script>
-    const users = {
-      "Josue": "1234",
-      "Betza": "1234"
-    };
 
-    const form = document.getElementById("login-form");
-    const error = document.getElementById("error");
-    const welcome = document.getElementById("welcome-message");
-    const iframeContainer = document.getElementById("iframe-container");
+<script>
+  const users = {
+    "Josue": "1234",
+    "Betza": "1234"
+  };
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const username = document.getElementById("username").value.trim();
-      const password = document.getElementById("password").value.trim();
+  const form = document.getElementById("login-form");
+  const error = document.getElementById("error");
+  const welcome = document.getElementById("welcome-message");
+  const iframeContainer = document.getElementById("iframe-container");
 
-      if (users[username] && users[username] === password) {
-        form.style.display = "none";
-        error.style.display = "none";
-        welcome.style.display = "block";
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-        // Mostrar el iframe después de 3 segundos
-        setTimeout(() => {
-          document.getElementById("login-container").style.display = "none";
-          iframeContainer.style.display = "block";
-        }, 3000);
-      } else {
-        error.style.display = "block";
-      }
-    });
+    if (users[username] && users[username] === password) {
+      form.style.display = "none";
+      error.style.display = "none";
+      welcome.style.display = "block";
+
+      // Mostrar el iframe después de 3 segundos
+      setTimeout(() => {
+        document.getElementById("login-container").style.display = "none";
+        iframeContainer.style.display = "block";
+      }, 3000);
+    } else {
+      error.style.display = "block";
+    }
+  });
+</script>
